@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae29559e7b13d5241a187fdd20fbd1c5, type: 3}
+  m_Name: BootStrapSettings
+  m_EditorClassIdentifier: 
+  menuScene:
+    m_AssetGUID: 6ddc73cfd237bf64a8e8b3ca3c1eab5a
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  gdprUIReference: {fileID: 859209832, guid: ff9379dcf02e845bdb5b404bce27515e, type: 3}
+  gameModeSettings: {fileID: 11400000, guid: a9c6eedbb1a598c4ca4043c18a87264f, type: 2}
+  menuPrefabsContainer:
+    m_AssetGUID: dcc1bc0f73a5c664e85652bae78fcb45
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

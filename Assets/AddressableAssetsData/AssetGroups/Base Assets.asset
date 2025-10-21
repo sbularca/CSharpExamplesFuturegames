@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Base Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Base Assets
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 141e20ba50d68cf44b0631b7b13b154a
+  m_SerializeEntries:
+  - m_GUID: 876db87dcb089b14aa9e369d5a3071cf
+    m_Address: InitializerSettingsFile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b4c9231c84aa8f044b3e90de058f00cb
+    m_Address: BootStrapSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: abcee8d34c509874da98a584e3057e44
+    m_Address: Assets/RG/ProjectSetupExample/Prefabs/MainMenuCanvas.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: dcc1bc0f73a5c664e85652bae78fcb45
+    m_Address: Assets/RG/ProjectSetupExample/Settings/MainMenuPrefabsContainer.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c67c1decf5ce4e3428dde40228d1672e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fc08b29d6b0ad9a40809b6ccbe078b4e, type: 2}
+    - {fileID: 11400000, guid: 5aa34bfceca49b245bc106f8777f488a, type: 2}

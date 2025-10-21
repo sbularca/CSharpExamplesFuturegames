@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e295b3cce8e47e2b7fadb25fda6aa4a, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  matchCounter: 3
+  gameLevels:
+  - {fileID: 11400000, guid: 2c3c440c8b1448609a865c0aee76cc34, type: 2}
+  - {fileID: 11400000, guid: 5da11e16770746afaab5f2724309673a, type: 2}
+  - {fileID: 11400000, guid: 185f809d3a684cec87fcde49fdb75842, type: 2}
+  - {fileID: 11400000, guid: 0cfa480fc503461daa19654de0d8df46, type: 2}
+  gameTiles:
+  - {fileID: 8936270371906712714, guid: 0efd922110f54c3587cabe6e9568a539, type: 3}
+  - {fileID: -7377220221651275945, guid: 364d45a6af394f4681bd22cf20348fe3, type: 3}
+  - {fileID: 6570733118159818605, guid: 04a7164bef1f44529f4caec747d7646d, type: 3}
+  - {fileID: 2504802839041123472, guid: ce25a922c66244609afeef8b3d4abefe, type: 3}
+  - {fileID: 6727958804058631676, guid: 7cc570bbb878ce64e8123a6284cff0ee, type: 3}
+  tileSpeed: 15
+  tileClickDestroyDelay: 0.08

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449d27795607fe449857f6792decad8a, type: 3}
+  m_Name: XRInputSettings
+  m_EditorClassIdentifier: 
+  inputMode: 2
+  debugMenu:
+    m_Name: Debug Menu
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0503f844-5545-437c-84ab-a64635c13755
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c6027d2bf92764382b2690277ed8ed, type: 3}
+  m_Name: DesktopInputSettings
+  m_EditorClassIdentifier: 
+  inputMode: 1
+  debugMenu:
+    m_Name: Debug Menu
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 0b3902ac-8065-4c4a-98e3-b0040acf4507
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  movementAction:
+    m_Name: Movement
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: af29654f-736e-4093-bcff-54e2713669f4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  gamepadCameraRotation:
+    m_Name: Gamepad Camera Rotation
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 116322f5-aefc-4d14-a47c-5291a0c57e16
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  increaseMovementSpeed:
+    m_Name: Increase Movement Speed
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c8fa880f-7ed6-414c-8749-8f3c936a32cb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  decreaseMovementSpeed:
+    m_Name: Decrease Movement Speed
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4736e73c-9293-4e47-83e1-b3fb89fde340
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: TilesetGameMode
+  m_EditorClassIdentifier: 
+  m_GroupName: TilesetGameMode
+  m_GUID: 6ef8a59b2f0336e4a94f4a45198f2f0e
+  m_SerializeEntries:
+  - m_GUID: 931c6796b6c569445894e7c1a9b4c056
+    m_Address: Assets/Game/GameModes/TileSetGameModeDemo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c67c1decf5ce4e3428dde40228d1672e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 439f3f040b8d7bd40b77b1eb5ebca8c8, type: 2}
+    - {fileID: 11400000, guid: 76586a7b8c42f8f42a8c0f1d7aeccd16, type: 2}

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: SteamVRPlatform
+  m_EditorClassIdentifier: 
+  m_GroupName: SteamVRPlatform
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 22a5f8e20f9cccc44939b476edeb935d
+  m_SerializeEntries:
+  - m_GUID: 14db73037a589864ba8bbff61cb86002
+    m_Address: SteamVRPlatformSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eb7ab21f35c3036499d98337a6b42d16
+    m_Address: SteamVRInputSetting.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c67c1decf5ce4e3428dde40228d1672e, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 49a1e1ae11c03b54caef23692a9db9bc, type: 2}
+    - {fileID: 11400000, guid: a24b55509c131334fb68ffd6b3a48be3, type: 2}

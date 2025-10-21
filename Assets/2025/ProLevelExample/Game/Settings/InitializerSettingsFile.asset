@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82688c82df6a9c748a881acabee7bc9d, type: 3}
+  m_Name: InitializerSettingsFile
+  m_EditorClassIdentifier: 
+  desktopPlatformSettings:
+    m_AssetGUID: bee183586832f0f4aa3f817eebe7379f
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  xrPlatformSettings:
+    m_AssetGUID: 62b7222bf670707458ea5afbaedefc00
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  steamVRPlatformSettings:
+    m_AssetGUID: 14db73037a589864ba8bbff61cb86002
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  bootstrapAssetReference:
+    m_AssetGUID: b4c9231c84aa8f044b3e90de058f00cb
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
