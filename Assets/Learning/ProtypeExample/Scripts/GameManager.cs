@@ -272,6 +272,7 @@ namespace Learning.Prototype {
 
         public void QuitGame() {
             Application.Quit();
+            //Hello, can you see this message?
         }
     }
 
