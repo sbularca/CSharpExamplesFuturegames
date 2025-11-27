@@ -26,6 +26,7 @@ public class CommandHandler {
 
         if(shouldUndo) {
             if(commands.Count > 0) {
+                commands[^1].Undo();
                 commands.RemoveAt(commands.Count - 1);
             }
         }
