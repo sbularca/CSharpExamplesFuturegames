@@ -2,33 +2,51 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Events = EventsDefinition;
+
+public class PlayerDataStuff {
+    public string playerName;
+    public int playerHealth;
+    public bool playerIsDead;
+}
 
 public class ObserverExamples : MonoBehaviour {
-    public static Action<int> OnDamageAction;
+    public static Action<PlayerDataStuff> OnUpdatePlayerHealthUI;
 
-    private int playerHealth = 100;
+    List<PlayerDataStuff> players = new List<PlayerDataStuff>();
+
     private void OnEnable() {
-        Signals.Get<DamageSignal>().AddListener(OnDamage);
-        List<string> list = new List<string>();
-        var value = list.FirstOrDefault(n => n == "PlayerHealth");
-        OnDamageAction += OnDamage;
+        Signals.Get<Events.TakeDamageSignal>().AddListener(OnDamage); //subscribing to the event
+        OnUpdatePlayerHealthUI += UpdatUI;
+
     }
-    private void Start() {
-        Signals.Get<UpdateUI>().Dispatch(playerHealth);
-    }
-    private void OnDamage(int value) {
-        playerHealth -= value;
-        Signals.Get<UpdateUI>().Dispatch(playerHealth);
-        //GUIHandler.OnUpdateUI.Invoke(playerHealth);
+    private void UpdatUI(PlayerDataStuff obj) {
+        throw new NotImplementedException();
     }
 
-    private void OnDisable() {
-        Signals.Get<DamageSignal>().RemoveListener(OnDamage);
-        OnDamageAction -= OnDamage;
+    public void DamagePlayer(string name, int health) {
+        PlayerDataStuff playerData = players.FirstOrDefault(x => x.playerName == name);
+        if(playerData != null) {
+            Signals.Get<Events.TakeDamageSignal>().Dispatch(playerData,  health);
+        }
+
+        // foreach(PlayerDataStuff pData in players) {
+        //     if(pData.playerName == name) {
+        //         Signals.Get<TakeDamageSignal>().Dispatch(pData);
+        //     }
+        // }
+    }
+
+    private void OnDamage(PlayerDataStuff obj, int damage) {
+        //this will be triggered when the event TakeDamageSignal is dispatched(+1 frame)
+        obj.playerHealth -= damage;
+        OnUpdatePlayerHealthUI?.Invoke(obj);
+        //Signals.Get<Events.UpdatePlayerHealthUI>().Dispatch(obj);
+    }
+
+    private void OnDestroy() {
+        Signals.Get<Events.TakeDamageSignal>().RemoveListener(OnDamage);
+        OnUpdatePlayerHealthUI -= UpdatUI;
     }
 }
 
-//event definition
-public class DamageSignal : ASignal<int> { }
-
-public class UpdateUI : ASignal<int> { }
