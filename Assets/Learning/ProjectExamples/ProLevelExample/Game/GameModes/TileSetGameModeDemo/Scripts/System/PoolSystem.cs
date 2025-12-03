@@ -8,26 +8,26 @@ public class PoolSystem {
         this.poolSettings = poolSettings;
 
     }
-    private List<TileReference> tilePrefabs;
-    private readonly List<GameObject> pool = new List<GameObject>();
+    private readonly List<TileReference> pool = new List<TileReference>();
     private readonly List<string> tileTypeId = new List<string>();
 
     public TileSetGameData TileSetGameData { private get; set; }
+    public List<TileReference> TilePrefabs { get; private set; } = new List<TileReference>();
 
     public void Initialize() {
         if(TileSetGameData == null) {
             return;
         }
-        tilePrefabs = TileSetGameData.GameTiles;
+        TilePrefabs = TileSetGameData.GameTiles;
         InitializePool();
     }
 
-    public GameObject GetPoolItem(string typeID, Transform parent, float scale, bool asActive = true) {
-        var obj = GetPoolTile(typeID);
-        obj.transform.SetParent(parent);
-        obj.transform.localScale *= scale;
-        obj.SetActive(asActive);
-        return obj;
+    public TileReference GetPoolItem(string typeID, Transform parent, float scale, bool asActive = true) {
+        var tile = GetPoolTile(typeID);
+        tile.transform.SetParent(parent);
+        tile.transform.localScale *= scale;
+        tile.gameObject.SetActive(asActive);
+        return tile;
     }
 
     /// <summary>
@@ -46,37 +46,36 @@ public class PoolSystem {
         }
     }
 
-    private void InitializePool() {
-        for(int i = 0; i < tilePrefabs.Count; i++) {
+    public void InitializePool() {
+        for(int i = 0; i < TilePrefabs.Count; i++) {
             for(int j = 0; j < poolSettings.minAmountEach; j++) {
-                AddObjectToPool(tilePrefabs[i].gameObject);
+                AddObjectToPool(TilePrefabs[i]);
             }
         }
     }
 
-    private GameObject GetPoolTile(string typeID) {
-        GameObject tileObject = null;
+    private TileReference GetPoolTile(string typeID) {
+        TileReference tile = null;
         for(int i = 0; i < tileTypeId.Count; i++) {
             if(typeID == tileTypeId[i]) {
-                if(!pool[i].activeSelf) {
+                if(!pool[i].gameObject.activeSelf) {
                     return pool[i];
                 }
-                tileObject = pool[i];
+                tile = pool[i];
             }
         }
-        return AddObjectToPool(tileObject);
+        return AddObjectToPool(tile);
     }
 
-    private GameObject AddObjectToPool(GameObject tileObject) {
-        var obj = GameObject.Instantiate(tileObject);
-        obj.SetActive(false);
-        var tile = obj.GetComponent<TileReference>();
+    private TileReference AddObjectToPool(TileReference tileObject) {
+        var tile = GameObject.Instantiate(tileObject);
+        tile.gameObject.SetActive(false);
         if(tile != null) {
             tile.transform.localScale = GetScale(tile);
-            pool.Add(obj);
+            pool.Add(tile);
             tileTypeId.Add(tile.typeID);
         }
-        return obj;
+        return tile;
     }
 
     private Vector3 GetScale(TileReference tileReference) {
