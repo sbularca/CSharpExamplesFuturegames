@@ -24,7 +24,7 @@ namespace Project {
 
         private void OnEnable() {
             if(!EditorPrefs.HasKey("bootType")) {
-                BootType = BootType.FullBoot;
+                BootType = BootType.UnityDefault;
             }
         }
 

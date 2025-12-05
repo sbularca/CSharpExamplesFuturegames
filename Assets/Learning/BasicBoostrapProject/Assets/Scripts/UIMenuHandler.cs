@@ -14,7 +14,11 @@ public class UIMenuHandler {
         SetupButtons();
     }
 
-    public void SetupButtons() {
+    public void Tick() {
+        //not doing much, just an example
+    }
+
+    private void SetupButtons() {
         for(int i = 0; i < 3; i++) {
             ButtonReference button = GameObject.Instantiate(uiMenuView.buttonReferencePrefab, uiMenuView.menuParent);
             menuButtonList.Add(button);
@@ -28,5 +32,10 @@ public class UIMenuHandler {
     }
     private void LoadLevel() {
         // This method will load the first game level
+    }
+    public void OnDispose() {
+        if(uiMenuView != null) {
+            GameObject.Destroy(uiMenuView.gameObject);
+        }
     }
 }
