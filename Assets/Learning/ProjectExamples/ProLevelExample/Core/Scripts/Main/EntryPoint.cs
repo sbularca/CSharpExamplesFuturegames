@@ -30,22 +30,6 @@ namespace Project {
         private MenuApplicationStateData menuApplicationStateData;
 
         /// <summary>
-        /// The is the first method called when the game starts. It will load the Initializer prefab which will initialize the project
-        /// </summary>
-        [RuntimeInitializeOnLoadMethod]
-        private static void Initialize() {
-#if UNITY_EDITOR
-            if(BootMode.BootType == BootType.UnityDefault) {
-                return;
-            }
-#endif
-            var entryPoint = FindFirstObjectByType<EntryPoint>(FindObjectsInactive.Include);
-            if(entryPoint == null) {
-                var handler = Addressables.InstantiateAsync("Initializer");
-            }
-        }
-
-        /// <summary>
         /// Main application initialization coroutine
         /// </summary>
         public IEnumerator Start() {
@@ -81,7 +65,7 @@ namespace Project {
             var bootStrapsSettingsHandle = Addressables.LoadAssetAsync<BootstrapSettings>(initializerSettings.bootstrapAssetReference);
             yield return new WaitUntil(() => bootStrapsSettingsHandle.IsDone);
             bootstrapSettings = bootStrapsSettingsHandle.Result;
-            
+
             // We initialize the Application State Runner which will run the game states
             menuApplicationStateData = new MenuApplicationStateData();
             CreateApplicationStates();
@@ -99,6 +83,7 @@ namespace Project {
                 DevicePlatform.Desktop => new DesktopPlatform(initializerSettings.desktopPlatformSettings),
                 DevicePlatform.XR => new XRPlatform(initializerSettings.xrPlatformSettings),
                 DevicePlatform.SteamVR => new SteamVRPlatform(initializerSettings.steamVRPlatformSettings),
+                DevicePlatform.UnityEditor => new UnityEditorPlatform(initializerSettings.unityEditorPlatformSettings),
                 _ => platform
             };
 
@@ -117,7 +102,7 @@ namespace Project {
             applicationStates = new Dictionary<ApplicationState, IApplicationState> {
                 [ApplicationState.Splash] = new SplashApplicationState(bootstrapSettings, applicationData),
                 [ApplicationState.MainMenu] = new MainMenuApplicationState(applicationData, menuApplicationStateData, bootstrapSettings),
-                
+
                 // The GameMode state is where we will be playing the game or the games. It is where we can have multiple game modes
                 [ApplicationState.GameMode] = new GameModeApplicationState(applicationData, bootstrapSettings.gameModeSettings),
             };

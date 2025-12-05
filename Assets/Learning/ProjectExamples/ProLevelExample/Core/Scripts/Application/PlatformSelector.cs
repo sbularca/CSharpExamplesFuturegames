@@ -20,6 +20,8 @@ namespace Template {
             return InputMode.XR;
 #elif STEAMWORKS
             return InputMode.SteamVR;
+#elif UNITY_EDITOR
+            return InputMode.Editor;
 #else
             return InputMode.Desktop;
 #endif
@@ -30,6 +32,8 @@ namespace Template {
             return DevicePlatform.XR;
 #elif STEAMWORKS
             return DevicePlatform.SteamVR;
+#elif UNITY_EDITOR
+            return DevicePlatform.UnityEditor;
 #else
             return DevicePlatform.Desktop;
 #endif

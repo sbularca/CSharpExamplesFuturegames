@@ -8,7 +8,8 @@ namespace Template {
     public enum DevicePlatform {
         Desktop,
         XR,
-        SteamVR
+        SteamVR,
+        UnityEditor
     }
 
     /// <summary>

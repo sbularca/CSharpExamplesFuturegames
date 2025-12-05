@@ -4,8 +4,9 @@
         Desktop = 1,
         XR = 2,
         AR = 3,
-        SteamVR,
+        SteamVR = 5,
         HeadLess = 4,
+        Editor = 100
     }
 
     public enum ControllerHand {

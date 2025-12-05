@@ -16,19 +16,29 @@ MonoBehaviour:
     m_AssetGUID: bee183586832f0f4aa3f817eebe7379f
     m_SubObjectName: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 0
   xrPlatformSettings:
     m_AssetGUID: 62b7222bf670707458ea5afbaedefc00
     m_SubObjectName: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 0
   steamVRPlatformSettings:
     m_AssetGUID: 14db73037a589864ba8bbff61cb86002
     m_SubObjectName: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 0
   bootstrapAssetReference:
     m_AssetGUID: b4c9231c84aa8f044b3e90de058f00cb
     m_SubObjectName: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
+    m_EditorAssetChanged: 0
+  unityEditorPlatformSettings:
+    m_AssetGUID: e1902de90e9d3a9439bec608e9934511
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 0

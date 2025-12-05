@@ -9,5 +9,6 @@ namespace Project {
         public AssetReferenceT<XRPlatformSettings> xrPlatformSettings;
         public AssetReferenceT<SteamVRPlatformSettings> steamVRPlatformSettings;
         public AssetReferenceT<BootstrapSettings> bootstrapAssetReference;
+        public AssetReferenceT<UnityEditorPlatformSettings> unityEditorPlatformSettings;
     }
 }

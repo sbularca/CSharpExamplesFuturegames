@@ -16,7 +16,7 @@ namespace Template {
             if(platform != null) {
                 yield return platform.Initialize(applicationData);
             }
-            
+
             var handle = Addressables.LoadAssetAsync<SteamVRPlatformSettings>(assetReference);
             yield return new WaitUntil(() => handle.IsDone);
             steamVRPlatformSettings = handle.Result;

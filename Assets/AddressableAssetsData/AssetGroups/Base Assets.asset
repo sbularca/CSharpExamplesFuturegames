@@ -13,26 +13,33 @@ MonoBehaviour:
   m_Name: Base Assets
   m_EditorClassIdentifier: 
   m_GroupName: Base Assets
-  m_Data:
-    m_SerializedData: []
   m_GUID: 141e20ba50d68cf44b0631b7b13b154a
   m_SerializeEntries:
   - m_GUID: 876db87dcb089b14aa9e369d5a3071cf
     m_Address: InitializerSettingsFile
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: b4c9231c84aa8f044b3e90de058f00cb
-    m_Address: BootStrapSettings
-    m_ReadOnly: 0
-    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: abcee8d34c509874da98a584e3057e44
     m_Address: Assets/RG/ProjectSetupExample/Prefabs/MainMenuCanvas.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b4c9231c84aa8f044b3e90de058f00cb
+    m_Address: BootStrapSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be47b2ad9e13e9c45a481002e6219aba
+    m_Address: PrefabRegistry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: dcc1bc0f73a5c664e85652bae78fcb45
     m_Address: Assets/RG/ProjectSetupExample/Settings/MainMenuPrefabsContainer.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c67c1decf5ce4e3428dde40228d1672e, type: 2}
   m_SchemaSet:
